@@ -48,7 +48,7 @@ const projectsData = {
   5: {
     title: 'CSS Gradient Generator',
     description: ' Created a web tool that generates beautiful, randomized CSS gradients for developers and designers. ',
-    image: 'https://github.com/ShadowJod/CSS-GradientGenerator',
+    image: 'https://res.cloudinary.com/dmczrwazw/image/upload/v1753638020/cssGradient_ysfrw3.png',
     tech: ['HTML', 'CSS', 'JavaScript'],
     demo: 'https://github.com/ShadowJod/CSS-GradientGenerator',
     github: 'https://github.com/ShadowJod/CSS-GradientGenerator'
