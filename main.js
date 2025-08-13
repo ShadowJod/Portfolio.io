@@ -282,53 +282,53 @@ function animateSkillBars() {
   });
 }
 
-// Resume download
-function initializeResumeDownload() {
-  downloadResumeBtn.addEventListener('click', function(e) {
-    e.preventDefault();
+// // Resume download
+// function initializeResumeDownload() {
+//   downloadResumeBtn.addEventListener('click', function(e) {
+//     e.preventDefault();
     
-    // Create a temporary download message
-    const downloadMessage = document.createElement('div');
-    downloadMessage.innerHTML = `
-      <div style="
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        background: var(--primary-color);
-        color: white;
-        padding: 1rem 1.5rem;
-        border-radius: var(--border-radius);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        z-index: 1000;
-        animation: slideInRight 0.5s ease;
-      ">
-        <i class="fas fa-download" style="margin-right: 0.5rem;"></i>
-        Resume download would start here!
-      </div>
-    `;
+//     // Create a temporary download message
+//     const downloadMessage = document.createElement('div');
+//     downloadMessage.innerHTML = `
+//       <div style="
+//         position: fixed;
+//         top: 100px;
+//         right: 20px;
+//         background: var(--primary-color);
+//         color: white;
+//         padding: 1rem 1.5rem;
+//         border-radius: var(--border-radius);
+//         box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+//         z-index: 1000;
+//         animation: slideInRight 0.5s ease;
+//       ">
+//         <i class="fas fa-download" style="margin-right: 0.5rem;"></i>
+//         Resume download would start here!
+//       </div>
+//     `;
     
-    document.body.appendChild(downloadMessage);
+//     document.body.appendChild(downloadMessage);
     
-    setTimeout(() => {
-      downloadMessage.remove();
-    }, 3000);
+//     setTimeout(() => {
+//       downloadMessage.remove();
+//     }, 3000);
     
-    // In a real application, you would trigger the actual download here
-    // window.open('/path/to/resume.pdf', '_blank');
-  });
-}
+//     // In a real application, you would trigger the actual download here
+//     // window.open('/path/to/resume.pdf', '_blank');
+//   });
+// }
 
-// Code animation
-function initializeCodeAnimation() {
-  codeLines.forEach((line, index) => {
-    const delay = parseInt(line.getAttribute('data-delay')) * 500;
-    setTimeout(() => {
-      line.style.animationDelay = '0s';
-      line.style.opacity = '1';
-      line.style.transform = 'translateX(0)';
-    }, delay);
-  });
-}
+// // Code animation
+// function initializeCodeAnimation() {
+//   codeLines.forEach((line, index) => {
+//     const delay = parseInt(line.getAttribute('data-delay')) * 500;
+//     setTimeout(() => {
+//       line.style.animationDelay = '0s';
+//       line.style.opacity = '1';
+//       line.style.transform = 'translateX(0)';
+//     }, delay);
+//   });
+// }
 
 // Floating icons animation
 function initializeFloatingIcons() {
